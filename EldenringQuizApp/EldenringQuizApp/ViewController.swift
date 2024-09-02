@@ -9,11 +9,20 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var questionBox: UILabel!
+    @IBOutlet weak var scoreLabel: UILabel!
+    @IBOutlet weak var trueButton: UIButton!
+    @IBOutlet weak var falseButton: UIButton!
+    @IBOutlet weak var progressViewBar: UIProgressView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        progressViewBar.progress = 1.0
     }
 
-
+    @IBAction func buttonPressed(_ sender: UIButton) {
+        
+    }
+    
 }
-

@@ -33,6 +33,9 @@
                                             <fontDescription key="titleFontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="32"/>
                                             <color key="baseForegroundColor" red="0.031372550870000002" green="0.062745101750000004" blue="0.066666662690000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7tS-wY-v6V"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n0z-3N-U59">
                                         <rect key="frame" x="187.5" y="0.0" width="186.5" height="49.5"/>
@@ -45,6 +48,9 @@
                                             <fontDescription key="titleFontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="32"/>
                                             <color key="baseForegroundColor" red="0.031372550870000002" green="0.062745101750000004" blue="0.066666662690000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eMg-In-bcE"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -63,6 +69,11 @@
                                 <color key="textColor" red="0.96528705979999996" green="0.9863815977" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="wi4-IS-A5j">
+                                <rect key="frame" x="20" y="858" width="374" height="4"/>
+                                <color key="backgroundColor" red="0.1764705882" green="0.21960784310000001" blue="0.21960784310000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" red="0.42352938649999999" green="0.47843140360000003" blue="0.47843140360000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </progressView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -72,16 +83,26 @@
                             <constraint firstItem="mAv-Uq-Iv3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="6yt-3x-yMp"/>
                             <constraint firstItem="hG6-Lw-Oxz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="93o-Gg-L4J"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JjO-BP-Zcf" secondAttribute="trailing" constant="20" id="AzE-rr-1fZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wi4-IS-A5j" secondAttribute="trailing" constant="20" id="Cbn-bd-fX2"/>
                             <constraint firstItem="JjO-BP-Zcf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Eir-76-jFm"/>
                             <constraint firstItem="g1G-cn-Yr6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="5" id="I9T-VS-AaU"/>
                             <constraint firstItem="mAv-Uq-Iv3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="L2n-HQ-eza"/>
+                            <constraint firstItem="wi4-IS-A5j" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="LgI-9I-KGY"/>
                             <constraint firstItem="mAv-Uq-Iv3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="QiS-MH-ekQ"/>
                             <constraint firstItem="g1G-cn-Yr6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="VFH-Jj-Rp6"/>
                             <constraint firstAttribute="bottom" secondItem="hG6-Lw-Oxz" secondAttribute="bottom" id="hIS-cT-XuM"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="JjO-BP-Zcf" secondAttribute="bottom" constant="30" id="hQH-6i-K1S"/>
+                            <constraint firstItem="wi4-IS-A5j" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="riX-vu-c50"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mAv-Uq-Iv3" secondAttribute="trailing" constant="20" id="tgT-z5-6ba"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="falseButton" destination="n0z-3N-U59" id="JXb-I5-mQS"/>
+                        <outlet property="progressViewBar" destination="wi4-IS-A5j" id="mpk-co-GNP"/>
+                        <outlet property="questionBox" destination="mAv-Uq-Iv3" id="Qv6-XF-yIb"/>
+                        <outlet property="scoreLabel" destination="g1G-cn-Yr6" id="CS6-zb-6Rx"/>
+                        <outlet property="trueButton" destination="e83-mb-Ksa" id="n1D-om-Yn2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
