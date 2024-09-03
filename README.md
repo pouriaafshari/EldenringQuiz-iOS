@@ -1,4 +1,3 @@
-<pre>
 # Elden Ring Quiz
 
 Welcome to **Elden Ring Quiz** – a simple iOS quiz app where you can test your knowledge about the popular video game *Elden Ring* through a series of true/false questions.
@@ -53,5 +52,3 @@ For any inquiries or issues, feel free to reach out to me at [your-email@example
 ## Screenshot
 
 ![Elden Ring Quiz Screenshot](1.png)
-
-</pre>
